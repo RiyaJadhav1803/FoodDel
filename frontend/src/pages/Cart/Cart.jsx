@@ -10,7 +10,7 @@ const navigate=useNavigate();
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/cart',{
+        const response = await fetch('https://fooddel-backend-yajv.onrender.com/cart',{
           credentials:'include'
         });
 
@@ -29,7 +29,7 @@ const navigate=useNavigate();
     const status=false;
         removeFromCart(id,name);
         let payment = await fetch(
-            'http://localhost:5000/cart', {
+            'https://fooddel-backend-yajv.onrender.com/cart', {
                 method: "post",
                 body: JSON.stringify({status,name}),
                 headers: {
