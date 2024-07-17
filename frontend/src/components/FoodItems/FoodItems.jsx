@@ -10,7 +10,7 @@ const FoodItems = ({ email,id,name,image,description,price,loggedin }) => {
         if(loggedin){
             addToCart(id);
             let payment = await fetch(
-                'http://localhost:5000/fooditems', {
+                'https://fooddel-backend-yajv.onrender.com/fooditems', {
                     method: "post",
                     body: JSON.stringify({email,status,name,price,description}),
                     headers: {
@@ -34,7 +34,7 @@ const FoodItems = ({ email,id,name,image,description,price,loggedin }) => {
         if(loggedin){
             removeFromCart(id);
             let payment = await fetch(
-                'http://localhost:5000/fooditems', {
+                'https://fooddel-backend-yajv.onrender.com/fooditems', {
                     method: "post",
                     body: JSON.stringify({email, status,name,price,description}),
                     headers: {
