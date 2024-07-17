@@ -9,7 +9,7 @@ const [orders ,setorderdone]=useState([]);
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const get = await fetch('http://localhost:5000/yourorders',{
+            const get = await fetch('https://fooddel-backend-yajv.onrender.com/yourorders',{
               credentials:'include'
             });
 
