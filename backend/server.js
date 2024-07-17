@@ -6,7 +6,7 @@ const PORT=5000;
 require('dotenv').config();
 const stripe=require("stripe")(process.env.STRIPE_SECRET_KEY);
 const cors=require("cors");
-const bcrypt=require("bcrypt");
+const bcrypt=require("bcryptjs");
 const url=process.env.mongostring;
 const BASE_URL= 'http://localhost:3000'
   
