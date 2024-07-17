@@ -1,0 +1,28 @@
+.yourorder-title{
+    display: flex;
+    height: 8vh;
+    width: 40vw;
+    font-size: 1.2vw;
+    margin-left: 8vw;
+    box-shadow: inset -10px -10px 17px #3b3a3a73 , inset 10px 10px 17px rgba(94,104,121,0.288);
+    gap: 12.5vw;
+    color: rgb(255, 255, 255);
+}
+.yourorder-div{
+    width: 80vw;
+    margin-left: 8vw;
+}
+.yourorder-items{
+    display: grid;
+    grid-template-columns: 15vw 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+}
+.yourorder-hr{
+    width: 40vw;
+    height: 0px;
+    margin-left: 0px;
+}
+.yourorder-h2{
+    font-size: 3vw ;
+    margin-left: 8vw;
+}

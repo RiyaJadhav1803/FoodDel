@@ -1,0 +1,58 @@
+.homepage{
+    height: 73vh;
+    width:75vw;
+    background: url("./Foodimage.jpeg");
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    /* color: white; */
+    margin: 5vh 12vw;
+    flex-wrap: wrap;
+}
+.Heading1{
+    height: 48vh;
+    width:45vw;
+    margin: 24vh 5vw;
+    position: absolute; 
+}
+.viewbutton{
+    height: 6vh;
+    width: 9vw;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: black;
+}
+.viewbutton:hover{
+    background-color: rgb(244, 209, 194);
+    font-size: 1vw;
+    color: black;
+}
+h1{
+    font-size: 4vw;
+    animation: animate 3s , colorchange 3s infinite;
+}
+.p{
+    color: black;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes colorchange {
+    0% {
+        color: rgb(59, 18, 209);
+    }
+    33% {
+        color: rgb(174, 0, 165);
+    }
+    66% {
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        color: rgb(16, 215, 16);
+    }
+}

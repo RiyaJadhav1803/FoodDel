@@ -1,0 +1,115 @@
+.individual{
+    height: 45vh;
+    width: 20vw;
+    border-radius: 15px;
+    color: white;
+    animation: animate 3s ;
+    flex-wrap: wrap;
+    transition: 0.1s;
+    box-shadow: inset -10px -10px 17px #3b3a3a73 , inset 10px 10px 17px rgba(94,104,121,0.288);
+}
+.individual:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+}
+.fooddisplay-image{ 
+    height: 28vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 20vw;
+}
+.fooddisplay-image-container{
+    /* height: 28vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 20vw; */
+    position: relative;
+}
+.food-name{
+    height: 4vh;
+    width: 18vw;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
+    font-weight: 600;
+    position: relative;
+    padding: 0vh  0.5vw;
+    animation: colorchange 2s infinite;
+}
+.food-stars{
+    display: flex;
+    position:absolute;
+    right: -0vw;
+    width: 6vw;
+    align-items: center;
+    /* background-color: red; */
+}
+.food-description{
+    padding: 0vh  1vw;
+    font-size: 0.9vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.food-price{
+    padding: 0vh  1vw;
+    font-size: 1vw;
+    color: tomato;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.zero-count-image{
+    height: 5vh;
+    position: absolute;
+    width: 3vw;
+    bottom: 10px;
+    right: 5px;
+}
+.plus-click-plus ,.plus-click-minus{
+    height: 4.5vh;
+    width: 2.5vw;
+    font-size: 1vw;
+    color: black;
+}
+.plus-click-text{
+    height: 5vh;
+    width: 3vw;
+    font-size: 1vw;
+    margin-left: 0.7vw;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.plus-click{
+    display: flex;
+    height: 5vh;
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    bottom: 1vh;
+    right: 0vw;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} 
+@keyframes colorchange {
+    0% {
+        color: rgb(55, 0, 255);
+    }
+    33% {
+        color: rgb(186, 0, 177);
+    }
+    66% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: rgb(2, 253, 2);
+    }
+}

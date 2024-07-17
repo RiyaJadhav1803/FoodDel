@@ -1,0 +1,82 @@
+*{
+    color:white;
+}
+.cart-headings{
+    display: flex;
+    height: 8vh;
+    width: 85vw;
+    font-size: 1.2vw;
+    margin-left: 8vw;
+    box-shadow: inset -10px -10px 17px #3b3a3a73 , inset 10px 10px 17px rgba(94,104,121,0.288);
+    gap: 12.5vw;
+    color: rgb(255, 255, 255);
+}
+.cart-food-items{
+    width: 80vw;
+    margin-left: 8vw;
+}
+.cart-image{
+    height: 8vh;
+    width: 8vw;
+}
+.cart-single-items{
+    display: grid;
+    grid-template-columns: 14vw 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+}
+.cart-name, .cart-price, .cart-quantity , .cart-total-price {
+    color: rgb(255, 255, 255);
+}
+.cart-cross{
+    color: rgb(202, 0, 0);
+    cursor: pointer;
+}
+.hr{
+    width: 85vw;
+    height: 0vh;
+}
+.cart-below-block{
+    height: 40vh;
+    margin-left: 8vw;
+    width: 30vw;
+}
+.cart-below-heading{
+    color: tomato;
+    height: 2vh;
+    margin-left: 1vw;
+    font-size: 2.5vw;
+}
+.cart-below-subtotal , .cart-below-delivery , .cart-below-total{
+    display: flex;
+    height: 6vh;
+    margin-top: 0px;
+    font-size: 1.5vw;
+    position: relative;
+}
+.cart-below-subtotal-p1 , .cart-below-delivery-p1 , .cart-below-total-p1{
+    height: 6vh;
+    margin-left: 1vw;
+    font-size: 1.5vw;
+}
+.cart-below-subtotal-p2 , .cart-below-delivery-p2 , .cart-below-total-p2{
+    height: 6vh;
+    right: 2vw;
+    position: absolute;
+    font-size: 1.5vw;
+}
+.hr-below{
+    height: 0vh;
+    width:30vw;
+}
+.cart-below-button{
+    height: 6vh;
+    width: 30vw;
+    border-radius: 20px;
+    color: rgb(255, 250, 250);
+    font-size: 1.5vw;
+    background-color: tomato;
+}
+.cart-below-button:hover{
+    color: rgb(1, 1, 1);
+    background-color: rgb(236, 164, 152);
+}

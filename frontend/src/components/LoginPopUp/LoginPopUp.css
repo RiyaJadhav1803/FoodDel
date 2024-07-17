@@ -1,0 +1,80 @@
+.Login-form-div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #4c4c4cc5;
+    display: grid;
+    color: white;
+}
+.Login-form{
+    height: 50vh;
+    border-radius: 10px;
+    width: 22vw;
+    margin-top: 18vh;
+    margin-left: 40vw;
+    background-color: black;
+} 
+.login-div{
+    height: 8vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.login-text{
+    font-size: 2vw;
+    padding: 1vw;
+    color: tomato;
+    width: 10vw;
+}
+.cross{
+    margin-left: 8vw;
+    cursor: pointer;
+    font-size: 2vw;
+}
+.email , .password , .name{
+    margin: 1vh 1.5vw;
+    color: black;
+    height: 4vh;
+    width: 18vw;
+}
+.checkbox-box{
+    margin-left: 1vw;
+    cursor: pointer;
+}
+.checkbox-text{
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    margin-left: 1vw;
+    margin-top: 3.5vh;
+}
+.checkbox{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.two-buttons{
+    height: 5vh;
+    margin-left: 1vw;
+    color: black;
+    background-color: tomato;
+    border: 1px solid tomato;
+    border-radius: 8px;
+    font-size: 1.2vw;
+    width: 20vw;
+}
+.two-buttons:hover{
+    background-color: rgb(191, 34, 6);
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+.links{
+    display: flex;
+    justify-content: center;
+}
+.new-account:hover , .login-link:hover{
+    color:rgb(88, 216, 225);
+    cursor: pointer;
+}

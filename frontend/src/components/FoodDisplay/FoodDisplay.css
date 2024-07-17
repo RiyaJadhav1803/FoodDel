@@ -1,0 +1,30 @@
+.full{
+    /* height: 410vh; */
+    width: 90vw;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-left: 6vw;
+    flex-wrap: wrap;
+}
+.headings{ 
+    height: 10vh;
+    color: white;
+    width: 90vw;
+    /* background-color: yellow; */
+    margin-top: 35vh;
+    margin-left: 6vw;
+    font-size: 2vw;
+    font-weight: 700;
+    animation: animate 3s;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

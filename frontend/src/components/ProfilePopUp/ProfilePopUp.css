@@ -1,0 +1,70 @@
+.profile{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    /* background-color: #4c4c4cc5; */
+}
+.profile-box{
+    border: 5px dotted black;
+    height: 20vh;
+    width: 16vw;
+    background-color: rgb(219, 170, 243);
+    margin-left: 73vw;
+    margin-top: 7vh;
+}
+.profile-head{
+    height: 5vh;
+    width: 16vw;
+    display: flex;
+    align-items: center;
+}
+.profile-heading{
+    height: 4vh;
+    width: 10vw;
+    color: black;
+    font-size: 1.5vw;
+}
+.profile-cross{
+    margin-left: 4vw;
+    cursor: pointer;
+    font-size: 3vh;
+    font-weight: 700;
+   color: rgb(252, 5, 5);
+}
+.profile-logout{
+    height: 4vh;
+    margin-left: 3.5vw;
+    border-radius: 20px;
+    margin-top: 2vh;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+.profile-order{
+    height: 4vh;
+    margin-top: 2vh;
+    margin-left: 3.5vw;
+    border-radius: 20px;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+.profile-logout:hover{
+    background-color: rgb(214, 72, 72);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+.profile-order:hover{
+    background-color: rgb(214, 72, 72);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+.profile-email{
+    color: black;
+    margin-top: 0.2vw;
+}

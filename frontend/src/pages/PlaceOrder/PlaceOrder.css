@@ -1,0 +1,43 @@
+.placeorder-page{
+    display: flex;
+}
+.order-left{
+    height: 70vh;
+    width: 80vw;
+    margin-left: 5vw;
+    margin-top: 6vh;
+}
+.left-names , .left-four{
+    display: flex;
+    margin-top: 1vh;
+    gap: 0.5vw;
+}
+.left-heading{
+    font-size: 3vw;
+    color: tomato;
+}
+.firstname ,.lastname ,.city ,.state , .zipcode,.country{
+    height: 5vh;
+    color: black;
+    width: 20vw;
+    border-radius: 10px;
+    background-color: rgb(242, 242, 242);
+}
+.left-email , .street , .phoneno{
+    margin-top: 1vh;
+    color: black;
+    border-radius: 10px;
+    height: 5vh;
+    background-color: rgb(242, 242, 242);
+    width: 41vw;
+}
+.payment-button{
+    height: 6vh;
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+    width: 30vw;
+    border-radius: 20px;
+    color: rgb(255, 250, 250);
+    font-size: 1.5vw;
+    background-color: tomato;
+}
