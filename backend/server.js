@@ -163,7 +163,6 @@ res.status(200).json({ message: "Cart updated successfully" });
 })
 app.post("/logout", (req,res)=>{
     res.clearCookie('fooddata',{
-      path:"/login",
        httpOnly:true,
         secure:true,
         sameSite:"None",
