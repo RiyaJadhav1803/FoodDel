@@ -8,12 +8,12 @@ const stripe=require("stripe")(process.env.STRIPE_SECRET_KEY);
 const cors=require("cors");
 const bcrypt=require("bcryptjs");
 const url=process.env.mongostring;
-const BASE_URL= 'http://localhost:3000'
+const BASE_URL= 'https://fooddel-frontend-2uzz.onrender.com'
   
 
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://fooddel-frontend-2uzz.onrender.com",
     credentials: true
   }));
 
@@ -162,7 +162,12 @@ app.post("/fooditems",async(req,res)=>{
 res.status(200).json({ message: "Cart updated successfully" });
 })
 app.post("/logout", (req,res)=>{
-    res.clearCookie("fooddata");
+    res.clearCookie('fooddata',{
+      path:"/login",
+       httpOnly:true,
+        secure:true,
+        sameSite:"None",
+    });
     res.json({redirectto:'/'});
     console.log("logout page");
 })
@@ -233,8 +238,8 @@ app.post("/login",async(req,res)=>{
         {
             maxAge:3*24*60*1000,
             httpOnly:true,
-            secure:false,
-            sameSite:"strict",
+            secure:true,
+            sameSite:"None",
         })
         res.json({redirectto:"/"});
    }
