@@ -10,7 +10,7 @@ const handleOnSubmit = async (e) => {
     e.preventDefault();
 
     let loginpost = await fetch(
-        'http://localhost:5000/login', {
+        'https://fooddel-backend-yajv.onrender.com/login', {
             method: "post",
             body: JSON.stringify({email,password}),
             headers: {
