@@ -8,7 +8,7 @@ const handleOnSubmit = async (e) => {
     e.preventDefault();
 
     let loginpost = await fetch(
-        'http://localhost:5000/signup', {
+        'https://fooddel-backend-yajv.onrender.com/signup', {
             method: "post",
             body: JSON.stringify({email,password}),
             headers: {
