@@ -27,7 +27,7 @@ const navigate=useNavigate();
         const logout = async (e) => {
             e.preventDefault();
           try {
-                const response = await fetch('http://localhost:5000/logout',
+                const response = await fetch('https://fooddel-backend-yajv.onrender.com/logout',
                 {       method: "post",
                         body: JSON.stringify(),
                         headers: {
