@@ -2,7 +2,7 @@ const express=require("express");
 const mongoose=require("mongoose");
 const app=express();
 const cookieParser=require("cookie-parser");
-const PORT=5000;
+const PORT=process.env.PORT || 5000;
 require('dotenv').config();
 const stripe=require("stripe")(process.env.STRIPE_SECRET_KEY);
 const cors=require("cors");
