@@ -8,7 +8,7 @@ const PlaceOrder = () => {
   const handlepayment= async(e)=>{
     e.preventDefault();
     let payment = await fetch(
-        'http://localhost:5000/placeorder', {
+        'https://fooddel-backend-yajv.onrender.com/placeorder', {
             method: "post",
             body: JSON.stringify(),
             headers: {
@@ -32,7 +32,7 @@ const PlaceOrder = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/placeorder',{
+        const response = await fetch('https://fooddel-backend-yajv.onrender.com/placeorder',{
           credentials:'include'
         });
         const data = await response.json();
